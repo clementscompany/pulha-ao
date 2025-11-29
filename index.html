@@ -18,6 +18,7 @@
     class="input"
     required
   />
+  <div class="field-error" id="error-name"></div>
 
   <label class="label">Mensagem</label>
   <textarea 
@@ -38,6 +39,7 @@
       required
     />
   </div>
+  <div class="field-error" id="error-amount"></div>
 
   <div class="options-row">
     <button type="button" class="option-btn" data-value="7000000" onclick="setValue('7000')">7 000 00 KZ</button>
@@ -46,8 +48,16 @@
     <button type="button" class="option-btn" data-value="30000000" onclick="setValue('30000')">3 000 00 KZ</button>
   </div>
 
-  <button type="submit" class="submit-btn">Pilhar SI</button>
+  <button type="submit" class="submit-btn" id="submitBtn"><span class="btn-text">Pilhar SI</span><span class="spinner" aria-hidden="true"></span></button>
 </form>
+
+  <div id="errorCard" class="error-card" hidden>
+    <div class="error-card__content">
+      <div class="error-card__title">Ocorreu um erro</div>
+      <div class="error-card__body"></div>
+      <button type="button" class="error-card__close">Fechar</button>
+    </div>
+  </div>
 
   <script src="./payment.js"></script>
 </body>
