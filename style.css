@@ -1,0 +1,85 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: calibri;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.donation-box {
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  padding: 25px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin: 15px 0 5px;
+}
+
+.input,
+.textarea,
+.money-input input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d0d0d0;
+  background: #fafafa;
+  font-size: 16px;
+  outline: none;
+}
+
+.money-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #d0d0d0;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+
+.money-input span {
+  font-weight: bold;
+}
+
+.options-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.option-btn {
+  padding: 12px 20px;
+  border: 1px solid #dedede;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option-btn:hover {
+  background: #f5f5f5;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(45deg, #4a00ff, #9b00ff);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
